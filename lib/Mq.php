@@ -1,6 +1,6 @@
 <?php
 namespace HelperLib;
-class MoneyLog{
+class Mq{
     // 发送redis消息队列
     // 使用方式：
     // $redis = new Redis;
