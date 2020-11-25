@@ -3,14 +3,15 @@
 **加载助手**
 `composer require liuzhongsheng/helper`
 
-## 用户账户金额记录队列
+## 消息队列记录
 **功能描述**
-1. 增加账户金额流动队列:Lib/MoneyLog.php
-2. 增加对应数据库文件位于：MoneyLogDb/users_money_log.sql
-3. 增加基于workerman/redis-queue的消息队列演示：test/MoneyLogMqServer/server.php
+1. 增加消息队列:Lib/Mq.php
+2. 增加余额变动实例对应数据库文件位于：MoneyLogDb/users_money_log.sql
+3. 增加基于workerman/redis-queue的余额变动消息队列演示：test/MoneyLogMqServer/server.php
+可以用于金额变动、积分变动等日志场景
 
 **使用说明**
-#### 1.1 加入队列
+#### 1.1 加入队列如：用户金额变动
                     $logData = [
                         // 用户编号:id
                         'user_number' => '',
