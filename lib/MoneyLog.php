@@ -16,7 +16,6 @@ class MoneyLog{
      * @return mixed
      */
     public function redis_queue_send($redis, $queue, $data, $delay = 0) {
-        phpinfo();
         $queue_waiting = $queue.'redis-queue-waiting';
         $queue_delay = $queue.'redis-queue-delayed';
         $now = time();
