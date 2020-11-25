@@ -11,5 +11,10 @@
             "email": "996674366@qq.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "HelperLib\\": "lib/"
+        }
+    },
     "minimum-stability": "dev"
 }
