@@ -16,8 +16,8 @@ class Mq{
      * @return mixed
      */
     public function redis_queue_send($redis, $queue, $data, $delay = 0) {
-        $queue_waiting = $queue.'redis-queue-waiting';
-        $queue_delay = $queue.'redis-queue-delayed';
+        $queue_waiting = 'redis-queue-waiting';
+        $queue_delay = 'redis-queue-delayed';
         $now = time();
         $package_str = json_encode([
             'id'       => rand(),
